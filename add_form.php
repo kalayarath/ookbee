@@ -5,7 +5,7 @@
 </head>
 
 <body>
-    <form action="data.php" method="post">
+    <form action="data.php" method="post" name="myForm" onsubmit="return validateForm()">
         <fieldset>
             <legend>User information:</legend>
             <label>ชื่อ:</label><br>
@@ -35,4 +35,20 @@
     </form>
 </body>
 
+
+<script>
+function validateForm() {
+  var name = document.forms["myForm"]["name"].value;
+  var lastname = document.forms["myForm"]["lastname"].value;
+  var gender = document.forms["myForm"]["gender"].value;
+  var birthday = document.forms["myForm"]["birthday"].value;
+  var email = document.forms["myForm"]["email"].value;
+  var address = document.forms["myForm"]["address"].value;
+  var telephone = document.forms["myForm"]["telephone"].value;
+  if (name == "" || lastname == "" || gender == "" || birthday == "" || email == "" || address == "" || telephone == "") {
+    alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+    return false;
+  }
+}
+</script>
 </html>
