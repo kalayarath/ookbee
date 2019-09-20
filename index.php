@@ -37,8 +37,7 @@
 					<th width="10%">อีเมลล์</th>
 					<th width="20%">ที่อยู่</th>
 					<th width="5%">เบอร์โทรศัพท์</th>
-					<th width="5%">แก้ไข</th>
-					<th width="5%">ลบ</th>
+					<th width="5%" colspan="2"><a href="add_form.php">เพิ่ม user</a></th>
 					</tr>
  					</thead>
 
