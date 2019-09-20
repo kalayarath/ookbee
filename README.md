@@ -1,1 +1,1 @@
-# ookbee
+PHP 7+ executable
